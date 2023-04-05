@@ -29,10 +29,10 @@ final class UserViewController: UIViewController {
         alpha: 0.3
     )
     private let secondaryColor = UIColor(
-        red: 107/255,
+        red: 157/255,
         green: 148/255,
-        blue: 230/255,
-        alpha: 0.5
+        blue: 250/255,
+        alpha: 1
     )
     
     override func viewDidLoad() {

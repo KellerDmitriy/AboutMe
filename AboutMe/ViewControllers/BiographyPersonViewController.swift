@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ProInfoViewController: UIViewController {
+final class BiographyPersonViewController: UIViewController {
 
     @IBOutlet weak var educationLabel: UILabel!
     @IBOutlet weak var dateEducationLabel: UILabel!
@@ -15,11 +15,14 @@ final class ProInfoViewController: UIViewController {
     @IBOutlet weak var placeOfJobLabel: UILabel!
     @IBOutlet weak var jobTitleLabel: UILabel!
     
+    @IBOutlet weak var biographyLebel: UILabel!
+    
     var education = ""
     var dateEducation = ""
     var speciality = ""
     var placeOfJob = ""
     var jobTitle = ""
+    var biography = ""
     
     private let primaryColor = UIColor(
         red: 110/255,
@@ -28,10 +31,10 @@ final class ProInfoViewController: UIViewController {
         alpha: 0.3
     )
     private let secondaryColor = UIColor(
-        red: 107/255,
+        red: 157/255,
         green: 148/255,
-        blue: 230/255,
-        alpha: 0.5
+        blue: 250/255,
+        alpha: 1
     )
     
     override func viewDidLoad() {
@@ -43,6 +46,8 @@ final class ProInfoViewController: UIViewController {
         specialityLabel.text = speciality
         placeOfJobLabel.text = placeOfJob
         jobTitleLabel.text = jobTitle
+        
+        biographyLebel.text = biography
     }
     
 

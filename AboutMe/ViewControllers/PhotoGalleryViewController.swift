@@ -7,14 +7,16 @@
 
 import UIKit
 
-final class PersonalInfoViewController: UIViewController {
+final class PhotoGalleryViewController: UIViewController {
     
     @IBOutlet weak var photoImageView: UIImageView!
     
-    @IBOutlet weak var biographyLabel: UILabel!
+  
     
     var photo = [""]
     var biography = ""
+    
+    private var photoCount = 0
     
     private let photoGallery = [
         UIImage(named: "IMG_0218"),
@@ -30,10 +32,10 @@ final class PersonalInfoViewController: UIViewController {
         alpha: 0.3
     )
     private let secondaryColor = UIColor(
-        red: 107/255,
+        red: 157/255,
         green: 148/255,
-        blue: 230/255,
-        alpha: 0.5
+        blue: 250/255,
+        alpha: 1
     )
     
     override func viewDidLoad() {
@@ -41,12 +43,14 @@ final class PersonalInfoViewController: UIViewController {
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         photoImageView.layer.cornerRadius = 20
         photoImageView.image = UIImage(named: "IMG_0218")
-        biographyLabel.text = biography
-        print (biographyLabel.text ?? "[d[d[d")
     }
   
     @IBAction func leafThroughPhotoGallery(_ sender: UIButton) {
-        photoImageView.image = photoGallery.randomElement() as? UIImage
-        
+        if photoCount < photoGallery.count {
+            photoImageView.image = photoGallery[photoCount]
+            photoCount += 1
+        } else {
+            photoCount = 0
+        }
     }
 }

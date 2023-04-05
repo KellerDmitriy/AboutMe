@@ -25,7 +25,7 @@ final class WellcomeViewController: UIViewController {
     private let secondaryColor = UIColor(
         red: 107/255,
         green: 148/255,
-        blue: 230/255,
+        blue: 250/255,
         alpha: 1
     )
     

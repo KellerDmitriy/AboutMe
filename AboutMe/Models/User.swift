@@ -21,19 +21,16 @@ struct User {
                 fullname: "Keller",
                 dateOfBirth: "11.07.1987",
                 familyStatus: .married,
-                information: Information(
+                biography: Biography (
                     personal: "Родился в г. Фрунзе, сейчас живу в г. Санкт-Петербурге. У меня прекрасная жена Юлия, двое деток: сын Михаил, ему почти 3 года, и доча Дарья, ей пол годика...",
-                    professional: Professional(
-                        education: "Высшее образование",
-                        dateEducation: "2005-2010",
-                        speciality: "инжинер",
-                        placeOfJob: "Opra&Co",
-                        jobTitle: "инжинер"
-                    )
-                ),
-                avatar: "",
-                photogallery: [""]
-            )
+                    education: "Высшее образование",
+                    dateEducation: "2005-2010",
+                    speciality: "инжинер",
+                    placeOfJob: "Opra&Co",
+                    jobTitle: "инжинер"),
+            avatar: "",
+            photogallery: [""]
+           )
         )
     }
 }
@@ -43,7 +40,7 @@ struct Person {
     let fullname: String
     let dateOfBirth: String
     let familyStatus: FamilyStatus
-    let information: Information
+    let biography: Biography
     let avatar: String
     let photogallery: [String]
 }
@@ -53,12 +50,8 @@ enum FamilyStatus: String {
     case married
 }
 
-struct Information {
+struct Biography {
     let personal: String
-    let professional: Professional
-}
-
-struct Professional {
     let education: String
     let dateEducation: String
     let speciality: String

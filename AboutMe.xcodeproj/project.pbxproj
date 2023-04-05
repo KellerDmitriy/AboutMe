@@ -17,8 +17,8 @@
 		E158BE4129D766B00017B16D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E158BE3F29D766B00017B16D /* LaunchScreen.storyboard */; };
 		E158BE4929D767020017B16D /* WellcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BE4829D767020017B16D /* WellcomeViewController.swift */; };
 		E1A49CEB29DC1E02006A6D1F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A49CEA29DC1E02006A6D1F /* User.swift */; };
-		E1A49CED29DC96B8006A6D1F /* ProInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A49CEC29DC96B8006A6D1F /* ProInfoViewController.swift */; };
-		E1A49CEF29DC9929006A6D1F /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A49CEE29DC9929006A6D1F /* PersonalInfoViewController.swift */; };
+		E1A49CED29DC96B8006A6D1F /* BiographyPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A49CEC29DC96B8006A6D1F /* BiographyPersonViewController.swift */; };
+		E1A49CEF29DC9929006A6D1F /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A49CEE29DC9929006A6D1F /* PhotoGalleryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		E158BE4229D766B00017B16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E158BE4829D767020017B16D /* WellcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomeViewController.swift; sourceTree = "<group>"; };
 		E1A49CEA29DC1E02006A6D1F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		E1A49CEC29DC96B8006A6D1F /* ProInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProInfoViewController.swift; sourceTree = "<group>"; };
-		E1A49CEE29DC9929006A6D1F /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		E1A49CEC29DC96B8006A6D1F /* BiographyPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyPersonViewController.swift; sourceTree = "<group>"; };
+		E1A49CEE29DC9929006A6D1F /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 				E158BE3829D766AF0017B16D /* AboutMeViewController.swift */,
 				E158BE4829D767020017B16D /* WellcomeViewController.swift */,
 				E12476E929DCBE6400439D59 /* TabBarViewController.swift */,
-				E1A49CEC29DC96B8006A6D1F /* ProInfoViewController.swift */,
-				E1A49CEE29DC9929006A6D1F /* PersonalInfoViewController.swift */,
+				E1A49CEC29DC96B8006A6D1F /* BiographyPersonViewController.swift */,
+				E1A49CEE29DC9929006A6D1F /* PhotoGalleryViewController.swift */,
 				E12476E729DCBB8E00439D59 /* UserViewController.swift */,
 			);
 			path = ViewControllers;
@@ -193,8 +193,8 @@
 				E158BE4929D767020017B16D /* WellcomeViewController.swift in Sources */,
 				E158BE3529D766AF0017B16D /* AppDelegate.swift in Sources */,
 				E12476EA29DCBE6400439D59 /* TabBarViewController.swift in Sources */,
-				E1A49CED29DC96B8006A6D1F /* ProInfoViewController.swift in Sources */,
-				E1A49CEF29DC9929006A6D1F /* PersonalInfoViewController.swift in Sources */,
+				E1A49CED29DC96B8006A6D1F /* BiographyPersonViewController.swift in Sources */,
+				E1A49CEF29DC9929006A6D1F /* PhotoGalleryViewController.swift in Sources */,
 				E1A49CEB29DC1E02006A6D1F /* User.swift in Sources */,
 				E158BE3729D766AF0017B16D /* SceneDelegate.swift in Sources */,
 			);

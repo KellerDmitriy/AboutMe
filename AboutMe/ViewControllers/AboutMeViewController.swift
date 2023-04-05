@@ -39,15 +39,17 @@ class AboutMeViewController: UIViewController {
                 userVC.fullnamePerson = user.person.fullname
                 userVC.dateOfBirthPerson = user.person.dateOfBirth
                 userVC.familyStatusPerson = user.person.familyStatus.rawValue
-                guard let personVC = navigationVC.topViewController as? PersonalInfoViewController else {return }
+                
+                guard let personVC = navigationVC.topViewController as? PhotoGalleryViewController else {return }
                 personVC.photo = user.person.photogallery
-                personVC.biography = user.person.information.personal
-                guard let profInfoVC = navigationVC.topViewController as? ProInfoViewController else { return }
-                profInfoVC.education = user.person.information.professional.education
-                profInfoVC.dateEducation = user.person.information.professional.dateEducation
-                profInfoVC.speciality = user.person.information.professional.speciality
-                profInfoVC.placeOfJob = user.person.information.professional.placeOfJob
-                profInfoVC.jobTitle = user.person.information.professional.jobTitle
+                
+                guard let personInfoVC = navigationVC.topViewController as? BiographyPersonViewController else { return }
+                personInfoVC.education = user.person.biography.education
+                personInfoVC.dateEducation = user.person.biography.dateEducation
+                personInfoVC.speciality = user.person.biography.speciality
+                personInfoVC.placeOfJob = user.person.biography.placeOfJob
+                personInfoVC.jobTitle = user.person.biography.jobTitle
+                personInfoVC.biography = user.person.biography.personal
                 
             }
         }
