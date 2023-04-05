@@ -7,25 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E12476E829DCBB8E00439D59 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12476E729DCBB8E00439D59 /* UserViewController.swift */; };
+		E12476EA29DCBE6400439D59 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12476E929DCBE6400439D59 /* TabBarViewController.swift */; };
 		E158BE3529D766AF0017B16D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BE3429D766AF0017B16D /* AppDelegate.swift */; };
 		E158BE3729D766AF0017B16D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BE3629D766AF0017B16D /* SceneDelegate.swift */; };
-		E158BE3929D766AF0017B16D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BE3829D766AF0017B16D /* LoginViewController.swift */; };
+		E158BE3929D766AF0017B16D /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BE3829D766AF0017B16D /* AboutMeViewController.swift */; };
 		E158BE3C29D766AF0017B16D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E158BE3A29D766AF0017B16D /* Main.storyboard */; };
 		E158BE3E29D766B00017B16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E158BE3D29D766B00017B16D /* Assets.xcassets */; };
 		E158BE4129D766B00017B16D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E158BE3F29D766B00017B16D /* LaunchScreen.storyboard */; };
-		E158BE4929D767020017B16D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BE4829D767020017B16D /* WelcomeViewController.swift */; };
+		E158BE4929D767020017B16D /* WellcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BE4829D767020017B16D /* WellcomeViewController.swift */; };
+		E1A49CEB29DC1E02006A6D1F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A49CEA29DC1E02006A6D1F /* User.swift */; };
+		E1A49CED29DC96B8006A6D1F /* ProInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A49CEC29DC96B8006A6D1F /* ProInfoViewController.swift */; };
+		E1A49CEF29DC9929006A6D1F /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A49CEE29DC9929006A6D1F /* PersonalInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E12476E729DCBB8E00439D59 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		E12476E929DCBE6400439D59 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		E158BE3129D766AF0017B16D /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E158BE3429D766AF0017B16D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E158BE3629D766AF0017B16D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E158BE3829D766AF0017B16D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E158BE3829D766AF0017B16D /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		E158BE3B29D766AF0017B16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E158BE3D29D766B00017B16D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E158BE4029D766B00017B16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E158BE4229D766B00017B16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E158BE4829D767020017B16D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E158BE4829D767020017B16D /* WellcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellcomeViewController.swift; sourceTree = "<group>"; };
+		E1A49CEA29DC1E02006A6D1F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E1A49CEC29DC96B8006A6D1F /* ProInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProInfoViewController.swift; sourceTree = "<group>"; };
+		E1A49CEE29DC9929006A6D1F /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +68,53 @@
 		E158BE3329D766AF0017B16D /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
-				E158BE3429D766AF0017B16D /* AppDelegate.swift */,
-				E158BE3629D766AF0017B16D /* SceneDelegate.swift */,
-				E158BE3829D766AF0017B16D /* LoginViewController.swift */,
-				E158BE4829D767020017B16D /* WelcomeViewController.swift */,
-				E158BE3A29D766AF0017B16D /* Main.storyboard */,
+				E1A49CE829DC1D64006A6D1F /* ViewControllers */,
+				E1A49CE929DC1D8C006A6D1F /* Models */,
+				E1A49CE729DC1D4A006A6D1F /* Storybords */,
+				E1A49CE629DC1C42006A6D1F /* App */,
 				E158BE3D29D766B00017B16D /* Assets.xcassets */,
-				E158BE3F29D766B00017B16D /* LaunchScreen.storyboard */,
-				E158BE4229D766B00017B16D /* Info.plist */,
 			);
 			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		E1A49CE629DC1C42006A6D1F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E158BE3429D766AF0017B16D /* AppDelegate.swift */,
+				E158BE3629D766AF0017B16D /* SceneDelegate.swift */,
+				E158BE4229D766B00017B16D /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E1A49CE729DC1D4A006A6D1F /* Storybords */ = {
+			isa = PBXGroup;
+			children = (
+				E158BE3A29D766AF0017B16D /* Main.storyboard */,
+				E158BE3F29D766B00017B16D /* LaunchScreen.storyboard */,
+			);
+			path = Storybords;
+			sourceTree = "<group>";
+		};
+		E1A49CE829DC1D64006A6D1F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E158BE3829D766AF0017B16D /* AboutMeViewController.swift */,
+				E158BE4829D767020017B16D /* WellcomeViewController.swift */,
+				E12476E929DCBE6400439D59 /* TabBarViewController.swift */,
+				E1A49CEC29DC96B8006A6D1F /* ProInfoViewController.swift */,
+				E1A49CEE29DC9929006A6D1F /* PersonalInfoViewController.swift */,
+				E12476E729DCBB8E00439D59 /* UserViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E1A49CE929DC1D8C006A6D1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1A49CEA29DC1E02006A6D1F /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E158BE3929D766AF0017B16D /* LoginViewController.swift in Sources */,
-				E158BE4929D767020017B16D /* WelcomeViewController.swift in Sources */,
+				E158BE3929D766AF0017B16D /* AboutMeViewController.swift in Sources */,
+				E12476E829DCBB8E00439D59 /* UserViewController.swift in Sources */,
+				E158BE4929D767020017B16D /* WellcomeViewController.swift in Sources */,
 				E158BE3529D766AF0017B16D /* AppDelegate.swift in Sources */,
+				E12476EA29DCBE6400439D59 /* TabBarViewController.swift in Sources */,
+				E1A49CED29DC96B8006A6D1F /* ProInfoViewController.swift in Sources */,
+				E1A49CEF29DC9929006A6D1F /* PersonalInfoViewController.swift in Sources */,
+				E1A49CEB29DC1E02006A6D1F /* User.swift in Sources */,
 				E158BE3729D766AF0017B16D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KYB528F2CP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_FILE = AboutMe/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -325,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KYB528F2CP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_FILE = AboutMe/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
