@@ -102,9 +102,9 @@
 				E158BE3829D766AF0017B16D /* AboutMeViewController.swift */,
 				E158BE4829D767020017B16D /* WellcomeViewController.swift */,
 				E12476E929DCBE6400439D59 /* TabBarViewController.swift */,
+				E12476E729DCBB8E00439D59 /* UserViewController.swift */,
 				E1A49CEC29DC96B8006A6D1F /* BiographyPersonViewController.swift */,
 				E1A49CEE29DC9929006A6D1F /* PhotoGalleryViewController.swift */,
-				E12476E729DCBB8E00439D59 /* UserViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

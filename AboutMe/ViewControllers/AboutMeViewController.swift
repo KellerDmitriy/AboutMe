@@ -14,7 +14,6 @@ class AboutMeViewController: UIViewController {
     
     private let user = User.getUser()
     
-    
     override func viewDidLoad() {
         usernameTF.text = user.login
         passwordTF.text = user.password
@@ -26,20 +25,24 @@ class AboutMeViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let tabBarController = segue.destination as?
+                UITabBarController else { return }
         guard let viewControllers = tabBarController.viewControllers else { return }
         viewControllers.forEach { viewController in
             if let wellcomeVC = viewController as? WellcomeViewController {
                 wellcomeVC.wellcomeUName = user.login
                 wellcomeVC.userName = user.person.name
-            } else if let navigationVC = viewController as? UINavigationController {
-                guard let userVC = navigationVC.topViewController as? UserViewController else { return }
+                
+            } else if let navigationVC = viewController as?
+                        UINavigationController {
+                guard let userVC = navigationVC.topViewController as?
+                        UserViewController else { return }
                 userVC.avatar = user.person.avatar
                 userVC.namePerson = user.person.name
                 userVC.fullnamePerson = user.person.fullname
                 userVC.dateOfBirthPerson = user.person.dateOfBirth
                 userVC.familyStatusPerson = user.person.familyStatus.rawValue
-                
+                // далее так не нашел способ как передать данные с экрана на два следующих, причем фото передается, а текст нет(
                 guard let personVC = navigationVC.topViewController as? PhotoGalleryViewController else {return }
                 personVC.photo = user.person.photogallery
                 
@@ -80,7 +83,11 @@ class AboutMeViewController: UIViewController {
         : showAlert(withTitle: "Hallo!", addMessage: "Your password is \(user.password) 😉")
     }
     
-    private func showAlert(withTitle title: String, addMessage message: String, textfield: UITextField? = nil) {
+    private func showAlert(
+        withTitle title: String,
+        addMessage message: String,
+        textfield: UITextField? = nil
+    ) {
         let alert = UIAlertController(
             title: title,
             message: message,

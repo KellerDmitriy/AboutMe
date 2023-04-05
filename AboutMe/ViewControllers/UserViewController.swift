@@ -22,22 +22,10 @@ final class UserViewController: UIViewController {
     var dateOfBirthPerson = ""
     var familyStatusPerson = ""
     
-    private let primaryColor = UIColor(
-        red: 110/255,
-        green: 209/255,
-        blue: 88/255,
-        alpha: 0.3
-    )
-    private let secondaryColor = UIColor(
-        red: 157/255,
-        green: 148/255,
-        blue: 250/255,
-        alpha: 1
-    )
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        
         namePersonLabel.text = namePerson
         fullnamePersonLabel.text = fullnamePerson
         dateOfBirthPersonLabel.text = dateOfBirthPerson
