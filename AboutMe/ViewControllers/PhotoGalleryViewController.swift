@@ -13,7 +13,6 @@ final class PhotoGalleryViewController: UIViewController {
    
     var user: User!
     
-    
     private var photoCount = 0
     
     private let photoGallery = [

@@ -17,18 +17,18 @@ final class BiographyPersonViewController: UIViewController {
     
     @IBOutlet weak var biographyLebel: UILabel!
     
-    var user: User!
+    var user: User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        educationLabel.text = user.person.biography.education
-        dateEducationLabel.text = user.person.biography.dateEducation
-        specialityLabel.text = user.person.biography.speciality
-        placeOfJobLabel.text = user.person.biography.placeOfJob
-        jobTitleLabel.text = user.person.biography.jobTitle
+        educationLabel.text = user?.person.biography.education
+        dateEducationLabel.text = user?.person.biography.dateEducation
+        specialityLabel.text = user?.person.biography.speciality
+        placeOfJobLabel.text = user?.person.biography.placeOfJob
+        jobTitleLabel.text = user?.person.biography.jobTitle
 
-        biographyLebel.text = user.person.biography.personal
+        biographyLebel.text = user?.person.biography.personal
     }
     
 
