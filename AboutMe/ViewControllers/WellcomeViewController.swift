@@ -13,8 +13,8 @@ final class WellcomeViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     
-    var wellcomeUName = ""
-    var userName = ""
+    var user: User!
+
     
     private let primaryColor = UIColor(
         red: 110/255,
@@ -32,8 +32,8 @@ final class WellcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        wellcomeLabel.text = "Wellcome, \(wellcomeUName)!"
-        nameLabel.text = "My name is \(userName)."
+        wellcomeLabel.text = "Wellcome, \(user.login)!"
+        nameLabel.text = "My name is \(user.person.name)."
     }    
 }
 

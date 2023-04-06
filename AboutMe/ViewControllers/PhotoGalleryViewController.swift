@@ -11,8 +11,8 @@ final class PhotoGalleryViewController: UIViewController {
     
     @IBOutlet weak var photoImageView: UIImageView!
    
-    var photo = [""]
-    var biography = ""
+    var user: User!
+    
     
     private var photoCount = 0
     

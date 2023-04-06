@@ -16,6 +16,8 @@ final class UserViewController: UIViewController {
     @IBOutlet weak var dateOfBirthPersonLabel: UILabel!
     @IBOutlet weak var familyStatusPersonLabel: UILabel!
     
+    var user: User!
+    
     var avatar = ""
     var namePerson = ""
     var fullnamePerson = ""
@@ -26,10 +28,10 @@ final class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        namePersonLabel.text = namePerson
-        fullnamePersonLabel.text = fullnamePerson
-        dateOfBirthPersonLabel.text = dateOfBirthPerson
-        familyStatusPersonLabel.text = familyStatusPerson
+        namePersonLabel.text = user.person.name
+        fullnamePersonLabel.text = user.person.fullname
+        dateOfBirthPersonLabel.text = user.person.dateOfBirth
+       // familyStatusPersonLabel.text = user.person.familyStatus
         avatarImageView.layer.cornerRadius = 50
         avatarImageView.image = UIImage(named: "IMG_0214")
     }

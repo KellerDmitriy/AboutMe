@@ -30,29 +30,20 @@ class AboutMeViewController: UIViewController {
         guard let viewControllers = tabBarController.viewControllers else { return }
         viewControllers.forEach { viewController in
             if let wellcomeVC = viewController as? WellcomeViewController {
-                wellcomeVC.wellcomeUName = user.login
-                wellcomeVC.userName = user.person.name
+                wellcomeVC.user = user
                 
             } else if let navigationVC = viewController as?
                         UINavigationController {
                 guard let userVC = navigationVC.topViewController as?
                         UserViewController else { return }
-                userVC.avatar = user.person.avatar
-                userVC.namePerson = user.person.name
-                userVC.fullnamePerson = user.person.fullname
-                userVC.dateOfBirthPerson = user.person.dateOfBirth
-                userVC.familyStatusPerson = user.person.familyStatus.rawValue
-                // далее так не нашел способ как передать данные с экрана на два следующих, причем фото передается, а текст нет(
+                userVC.user = user
+           
                 guard let personVC = navigationVC.topViewController as? PhotoGalleryViewController else {return }
-                personVC.photo = user.person.photogallery
+                personVC.user = user
                 
                 guard let personInfoVC = navigationVC.topViewController as? BiographyPersonViewController else { return }
-                personInfoVC.education = user.person.biography.education
-                personInfoVC.dateEducation = user.person.biography.dateEducation
-                personInfoVC.speciality = user.person.biography.speciality
-                personInfoVC.placeOfJob = user.person.biography.placeOfJob
-                personInfoVC.jobTitle = user.person.biography.jobTitle
-                personInfoVC.biography = user.person.biography.personal
+                
+                personInfoVC.user = user
                 
             }
         }
