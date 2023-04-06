@@ -22,8 +22,7 @@ final class PhotoGalleryViewController: UIViewController {
         UIImage(named: "IMG_0220"),
         UIImage(named: "IMG_0221")
     ]
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
       
