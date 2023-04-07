@@ -25,29 +25,11 @@ class AboutMeViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarController = segue.destination as?
-                UITabBarController else { return }
-        guard let viewControllers = tabBarController.viewControllers else { return }
-        viewControllers.forEach { viewController in
-            if let wellcomeVC = viewController as? WellcomeViewController {
-                wellcomeVC.user = user
-                
-            } else if let navigationVC = viewController as?
-                        UINavigationController {
-                guard let userVC = navigationVC.topViewController as?
-                        UserViewController else { return }
-                userVC.user = user
-           
-                guard let personVC = navigationVC.topViewController as? PhotoGalleryViewController else {return }
-                personVC.user = user
-                
-                guard let personInfoVC = navigationVC.topViewController as? BiographyPersonViewController else { return }
-                
-                personInfoVC.user = user
-                
-            }
+        guard let tabBarController = segue.destination as? TabBarController else {
+            return
         }
-    }
+        tabBarController.user = user
+            }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         usernameTF.text = user.login

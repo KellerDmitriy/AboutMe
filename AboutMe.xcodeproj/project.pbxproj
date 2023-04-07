@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E12476E829DCBB8E00439D59 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12476E729DCBB8E00439D59 /* UserViewController.swift */; };
-		E12476EA29DCBE6400439D59 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12476E929DCBE6400439D59 /* TabBarViewController.swift */; };
+		E12476EA29DCBE6400439D59 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12476E929DCBE6400439D59 /* TabBarController.swift */; };
 		E158BE3529D766AF0017B16D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BE3429D766AF0017B16D /* AppDelegate.swift */; };
 		E158BE3729D766AF0017B16D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BE3629D766AF0017B16D /* SceneDelegate.swift */; };
 		E158BE3929D766AF0017B16D /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158BE3829D766AF0017B16D /* AboutMeViewController.swift */; };
@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		E12476E729DCBB8E00439D59 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
-		E12476E929DCBE6400439D59 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E12476E929DCBE6400439D59 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E158BE3129D766AF0017B16D /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E158BE3429D766AF0017B16D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E158BE3629D766AF0017B16D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				E158BE3829D766AF0017B16D /* AboutMeViewController.swift */,
+				E12476E929DCBE6400439D59 /* TabBarController.swift */,
 				E158BE4829D767020017B16D /* WellcomeViewController.swift */,
-				E12476E929DCBE6400439D59 /* TabBarViewController.swift */,
 				E12476E729DCBB8E00439D59 /* UserViewController.swift */,
 				E1A49CEC29DC96B8006A6D1F /* BiographyPersonViewController.swift */,
 				E1A49CEE29DC9929006A6D1F /* PhotoGalleryViewController.swift */,
@@ -192,7 +192,7 @@
 				E12476E829DCBB8E00439D59 /* UserViewController.swift in Sources */,
 				E158BE4929D767020017B16D /* WellcomeViewController.swift in Sources */,
 				E158BE3529D766AF0017B16D /* AppDelegate.swift in Sources */,
-				E12476EA29DCBE6400439D59 /* TabBarViewController.swift in Sources */,
+				E12476EA29DCBE6400439D59 /* TabBarController.swift in Sources */,
 				E1A49CED29DC96B8006A6D1F /* BiographyPersonViewController.swift in Sources */,
 				E1A49CEF29DC9929006A6D1F /* PhotoGalleryViewController.swift in Sources */,
 				E1A49CEB29DC1E02006A6D1F /* User.swift in Sources */,
@@ -272,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -351,7 +351,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,7 +383,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

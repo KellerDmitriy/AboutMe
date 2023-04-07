@@ -12,30 +12,33 @@ final class UserViewController: UIViewController {
     @IBOutlet weak var avatarImageView: UIImageView!
     
     @IBOutlet weak var namePersonLabel: UILabel!
-    @IBOutlet weak var fullnamePersonLabel: UILabel!
+    @IBOutlet weak var surnamePersonLabel: UILabel!
     @IBOutlet weak var dateOfBirthPersonLabel: UILabel!
     @IBOutlet weak var familyStatusPersonLabel: UILabel!
     
     var user: User!
     
-    var avatar = ""
-    var namePerson = ""
-    var fullnamePerson = ""
-    var dateOfBirthPerson = ""
-    var familyStatusPerson = ""
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         namePersonLabel.text = user.person.name
-        fullnamePersonLabel.text = user.person.fullname
+        surnamePersonLabel.text = user.person.surname
         dateOfBirthPersonLabel.text = user.person.dateOfBirth
-       // familyStatusPersonLabel.text = user.person.familyStatus
+        familyStatusPersonLabel.text = user?.person.familyStatus.rawValue
         avatarImageView.layer.cornerRadius = 50
         avatarImageView.image = UIImage(named: "IMG_0214")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let biographiVC = segue.destination as? BiographyPersonViewController {
+            biographiVC.user = user
+        } else if let photoGalleryVC = segue.destination as? PhotoGalleryViewController {
+            photoGalleryVC.user = user
+            
+        }
+        
+    }
 }
+
 
 

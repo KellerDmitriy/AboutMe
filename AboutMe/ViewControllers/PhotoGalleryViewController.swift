@@ -10,7 +10,9 @@ import UIKit
 final class PhotoGalleryViewController: UIViewController {
     
     @IBOutlet weak var photoImageView: UIImageView!
-   
+
+    @IBOutlet weak var biographyLabel: UILabel!
+    
     var user: User!
     
     private var photoCount = 0
@@ -24,7 +26,7 @@ final class PhotoGalleryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        biographyLabel.text = user.person.biography
         photoImageView.layer.cornerRadius = 20
         photoImageView.image = UIImage(named: "IMG_0220")
     }
