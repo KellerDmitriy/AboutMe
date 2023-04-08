@@ -20,7 +20,7 @@ final class UserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "\(user.person.fullName) Bio"
         namePersonLabel.text = user.person.name
         surnamePersonLabel.text = user.person.surname
         dateOfBirthPersonLabel.text = user.person.dateOfBirth
