@@ -15,7 +15,6 @@ final class WellcomeViewController: UIViewController {
     
     var user: User!
 
-    
     private let primaryColor = UIColor(
         red: 110/255,
         green: 209/255,

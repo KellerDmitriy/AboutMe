@@ -43,8 +43,13 @@ struct Person {
             familyStatus: .married,
             biography: "Я родился в г. Фрунзе, сейчас живу в г. Санкт-Петербурге. У меня прекрасная жена Юлия, у нас двое деток: сын Михаил, ему почти 3 года, и доча Дарья, ей пол года...",
             professionalInfo: ProfessionalInfo.getProfessionalInfo(),
-            avatar: "",
-            photogallery: [""]
+            avatar: "IMG_0214",
+            photogallery: [
+                "IMG_0218",
+                "IMG_0219",
+                "IMG_0220",
+                "IMG_0221"
+            ]
         )
         
     }

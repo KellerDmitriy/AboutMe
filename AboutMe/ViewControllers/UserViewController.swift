@@ -26,7 +26,7 @@ final class UserViewController: UIViewController {
         dateOfBirthPersonLabel.text = user.person.dateOfBirth
         familyStatusPersonLabel.text = user?.person.familyStatus.rawValue
         avatarImageView.layer.cornerRadius = 50
-        avatarImageView.image = UIImage(named: "IMG_0214")
+        avatarImageView.image = UIImage(named: user.person.avatar)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

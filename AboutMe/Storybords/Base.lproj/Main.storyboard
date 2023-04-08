@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="5632" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -338,47 +338,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qxw-8D-TeH">
-                                <rect key="frame" x="16" y="100" width="288" height="386"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bJQ-e9-iks">
+                                <rect key="frame" x="16" y="434" width="288" height="63"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D2Z-WY-bPP">
-                                        <rect key="frame" x="30.5" y="0.0" width="227" height="303"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="D2Z-WY-bPP" secondAttribute="height" multiplier="9:12" id="guc-MH-AZo"/>
-                                        </constraints>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTt-Wi-JTi">
-                                        <rect key="frame" x="120" y="311" width="48.5" height="50"/>
+                                        <rect key="frame" x="124" y="0.0" width="40" height="27.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="▷">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="leafThroughPhotoGallery:" destination="RB0-SQ-Ulx" eventType="touchUpInside" id="JOs-up-fW8"/>
+                                            <action selector="leafThroughPhotoGallery:" destination="RB0-SQ-Ulx" eventType="touchUpInside" id="CYW-WE-xnQ"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="biography" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0X-95-Xce">
-                                        <rect key="frame" x="111.5" y="369" width="65" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="biography" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Q0X-95-Xce">
+                                        <rect key="frame" x="111.5" y="35.5" width="65" height="27.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D2Z-WY-bPP">
+                                <rect key="frame" x="35" y="92.5" width="250" height="333.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="D2Z-WY-bPP" secondAttribute="height" multiplier="3:4" id="guc-MH-AZo"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rki-aL-8so"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Rki-aL-8so" firstAttribute="trailing" secondItem="Qxw-8D-TeH" secondAttribute="trailing" constant="16" id="3PJ-TO-b7Q"/>
-                            <constraint firstItem="Qxw-8D-TeH" firstAttribute="top" secondItem="4Q6-8f-VBo" secondAttribute="firstBaseline" constant="100" id="A6R-Jf-TZg"/>
-                            <constraint firstItem="Rki-aL-8so" firstAttribute="bottom" secondItem="Qxw-8D-TeH" secondAttribute="bottom" constant="33" id="jMz-rE-dne"/>
-                            <constraint firstItem="Qxw-8D-TeH" firstAttribute="leading" secondItem="Rki-aL-8so" secondAttribute="leading" constant="16" id="xVs-Hr-oHC"/>
+                            <constraint firstItem="Rki-aL-8so" firstAttribute="trailing" secondItem="D2Z-WY-bPP" secondAttribute="trailing" constant="35" id="7U7-m5-Tjc"/>
+                            <constraint firstItem="D2Z-WY-bPP" firstAttribute="leading" secondItem="Rki-aL-8so" secondAttribute="leading" constant="35" id="Eay-FD-pmx"/>
+                            <constraint firstItem="Rki-aL-8so" firstAttribute="bottom" secondItem="bJQ-e9-iks" secondAttribute="bottom" constant="22" id="bXz-uH-pz7"/>
+                            <constraint firstItem="Rki-aL-8so" firstAttribute="trailing" secondItem="bJQ-e9-iks" secondAttribute="trailing" constant="16" id="bhe-0C-exY"/>
+                            <constraint firstItem="bJQ-e9-iks" firstAttribute="leading" secondItem="Rki-aL-8so" secondAttribute="leading" constant="16" id="e5G-Sa-BLe"/>
+                            <constraint firstItem="D2Z-WY-bPP" firstAttribute="centerX" secondItem="4Q6-8f-VBo" secondAttribute="centerX" id="jk6-Il-oxL"/>
+                            <constraint firstItem="bJQ-e9-iks" firstAttribute="top" secondItem="D2Z-WY-bPP" secondAttribute="bottom" constant="8" symbolic="YES" id="pPz-yT-Q5C"/>
+                            <constraint firstItem="D2Z-WY-bPP" firstAttribute="top" secondItem="Rki-aL-8so" secondAttribute="top" id="qey-AY-WQC"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Personal Information" image="person.fill" catalog="system" id="ErT-sW-WbG"/>
                     <navigationItem key="navigationItem" title="PhotoGallery" id="CBB-aE-1mb"/>
                     <connections>
-                        <outlet property="biographyLabel" destination="Q0X-95-Xce" id="f9o-tK-Czo"/>
+                        <outlet property="biographyLabel" destination="Q0X-95-Xce" id="YAb-Yi-TPs"/>
                         <outlet property="photoImageView" destination="D2Z-WY-bPP" id="mV9-LA-BU7"/>
                     </connections>
                 </viewController>

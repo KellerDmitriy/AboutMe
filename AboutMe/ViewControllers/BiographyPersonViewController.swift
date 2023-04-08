@@ -30,6 +30,4 @@ final class BiographyPersonViewController: UIViewController {
 
         contactsLebel.text = user.person.professionalInfo.contacts
     }
-    
-
 }
